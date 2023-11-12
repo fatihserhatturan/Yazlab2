@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\yazlabyeni.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\fitnes-770x513.jpg",
+      "PackagePath": "staticwebassets\\Images\\fitnes-770x513.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\hq720.jpg",
+      "PackagePath": "staticwebassets\\Images\\hq720.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\indir.jpeg",
+      "PackagePath": "staticwebassets\\Images\\indir.jpeg"
+    },
+    {
       "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

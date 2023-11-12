@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using BusinessLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using yazlabyeni.Models;
@@ -8,27 +9,22 @@ namespace yazlabyeni.Controllers
   //  [Authorize(Roles ="User")]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        TrainerManager trainerManager= new TrainerManager();
 
         public IActionResult Index()
         {
-            return View();
+            var trainerList = trainerManager.GetAllTrainer();
+            return View(trainerList);
         }
-
-        public IActionResult Privacy()
+        public PartialViewResult TrainerList()
         {
-            return View();
+            return PartialView();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public PartialViewResult SiteSlide()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return PartialView();
         }
+        
     }
 }
