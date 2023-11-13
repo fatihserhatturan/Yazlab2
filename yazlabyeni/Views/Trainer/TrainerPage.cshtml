@@ -6,6 +6,5 @@
 
 @model int;
 
-<div class="text">
-    -@Model.ToString();-
-</div>
+@await Component.InvokeAsync("TrainerAbout",Model)
+

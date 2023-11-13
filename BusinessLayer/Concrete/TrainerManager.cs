@@ -16,5 +16,11 @@ namespace BusinessLayer.Concrete
         {
             return repository.List().ToList();
         }
+
+        public Trainer GetTrainerById(int Id) 
+        {
+            Trainer trainer = repository.Find(x=>x.TrainerId == Id);
+            return(trainer);
+        }
     }
 }
