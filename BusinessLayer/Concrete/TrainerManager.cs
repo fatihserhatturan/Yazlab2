@@ -20,7 +20,15 @@ namespace BusinessLayer.Concrete
         public Trainer GetTrainerById(int Id) 
         {
             Trainer trainer = repository.Find(x=>x.TrainerId == Id);
-            return(trainer);
+            return trainer;
+        }
+        public int Update(Trainer trainer)
+        {
+            return repository.Update(trainer);
+        }
+        public Trainer GetTrainerByEmail(string Email)
+        {
+            return repository.Find(x=>x.Mail == Email);
         }
     }
 }

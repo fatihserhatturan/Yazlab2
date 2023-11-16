@@ -31,5 +31,6 @@ namespace DataAccessLayer.Concrete
 
        public DbSet<UserInfo>? UserInfos { get; set; }
 
+       public DbSet<UserTrainer>? UserTrainers { get; set;}        
     }
 }

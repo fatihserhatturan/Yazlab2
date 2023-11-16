@@ -17,6 +17,18 @@
       "PackagePath": "staticwebassets\\Images\\indir.jpeg"
     },
     {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\train.jpg",
+      "PackagePath": "staticwebassets\\Images\\train.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\train1.jpg",
+      "PackagePath": "staticwebassets\\Images\\train1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\train2.jpg",
+      "PackagePath": "staticwebassets\\Images\\train2.jpg"
+    },
+    {
       "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

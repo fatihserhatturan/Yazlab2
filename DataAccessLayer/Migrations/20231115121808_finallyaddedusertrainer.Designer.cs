@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20231110090258_first")]
-    partial class first
+    [Migration("20231115121808_finallyaddedusertrainer")]
+    partial class finallyaddedusertrainer
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -311,6 +311,25 @@ namespace DataAccessLayer.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserInfos");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.UserTrainer", b =>
+                {
+                    b.Property<int>("UserTrainerID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserTrainerID"), 1L, 1);
+
+                    b.Property<int>("TrainerID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserTrainerID");
+
+                    b.ToTable("UserTrainers");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Diet", b =>
