@@ -2095,24 +2095,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fatti\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mssrm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\mssrm\\OneDrive\\Masaüstü\\yazlab2\\Yazlab2\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\fatti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\DataAccessLayer\\obj\\",
+      "projectPath": "C:\\Users\\mssrm\\OneDrive\\Masaüstü\\yazlab2\\Yazlab2\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\mssrm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mssrm\\OneDrive\\Masaüstü\\yazlab2\\Yazlab2\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\fatti\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\mssrm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2120,15 +2115,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\mssrm\\OneDrive\\Masaüstü\\yazlab2\\Yazlab2\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\mssrm\\OneDrive\\Masaüstü\\yazlab2\\Yazlab2\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }
@@ -2188,7 +2182,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

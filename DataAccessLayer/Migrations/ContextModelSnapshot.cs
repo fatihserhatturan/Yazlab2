@@ -311,6 +311,25 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("UserInfos");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.UserTrainer", b =>
+                {
+                    b.Property<int>("UserTrainerID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserTrainerID"), 1L, 1);
+
+                    b.Property<int>("TrainerID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserTrainerID");
+
+                    b.ToTable("UserTrainers");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Diet", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.DietList", "DietList")
