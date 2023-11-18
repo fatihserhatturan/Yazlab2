@@ -4,9 +4,40 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model int;
+@model int
 
 @await Component.InvokeAsync("TrainerAbout",Model)
 
- <a class="component" asp-area="" asp-controller="ExercisesLists" asp-action="List">Egzersiz Listele</a>
+</br>
 
+<div class="text-center">
+
+    <h2>Egzersiz Listesi</h2>
+</div>
+
+</br>
+
+@await Component.InvokeAsync("TrainerExerciseList")
+
+</br>
+
+<div class="text-center">
+
+    <h2>Diyet Listesi</h2>
+</div>
+
+</br>
+
+@await Component.InvokeAsync("TrainerDietList")
+
+</br>
+
+<div class="text-center">
+
+    <h2>Başvuruda Bulun</h2>
+</div>
+
+
+
+</br>
+@await Html.PartialAsync("_Footer","Shared")

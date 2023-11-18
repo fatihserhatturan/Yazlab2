@@ -16,7 +16,7 @@
 
                         <li class="mb-3"><a href="#!"><i class="far fa-envelope display-25 me-3 text-secondary"></i>@Model.Mail</a></li>
                         <li class="mb-3"><a href="#!"><i class="fas fa-mobile-alt display-25 me-3 text-secondary"></i>@Model.PhoneNumber</a></li>
-                       
+
                     </ul>
                     <ul class="social-icon-style2 ps-0">
                         <li><a href="#!" class="rounded-3"><i class="fab fa-facebook-f"></i></a></li>
@@ -34,7 +34,7 @@
                         <h2 class="h1 mb-0 text-primary">#Hakkımda</h2>
                     </div>
                     <p>@Model.Description</p>
-                    
+
                 </div>
                 <div class="mb-5 wow fadeIn">
                     <div class="text-start mb-1-6 wow fadeIn">
@@ -70,16 +70,18 @@
                         </div>
                     </div>
                 </div>
-               
-                </div>
+
             </div>
         </div>
     </div>
-    <br />
-<a href="ExercisesLists/ListExercises.cshtml">
-    <button>Click Me!</button>
-</a>
-                      
+</div>
+<br />
+<button>
+    <form action="/Trainer/UserApplication" method="post">
+        <input type="hidden" name="id" value="@Model.TrainerId" />
+        <input type="submit" class="button btn-success" value="Başvur">
+    </form>
+</button>
 </div>
 
 

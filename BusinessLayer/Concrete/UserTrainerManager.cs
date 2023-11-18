@@ -17,5 +17,10 @@ namespace BusinessLayer.Concrete
         {
             return  UserTrainerDal.GetAll().Where(x=>x.TrainerID==id).ToList();
         }
+
+        public int InsertUserTrainer(UserTrainer userTrainer)
+        {
+            return UserTrainerDal.Insert(userTrainer);
+        }
     }
 }
