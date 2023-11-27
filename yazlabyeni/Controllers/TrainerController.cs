@@ -1,5 +1,4 @@
-﻿using AspNetCore;
-using BusinessLayer.Concrete;
+﻿using BusinessLayer.Concrete;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

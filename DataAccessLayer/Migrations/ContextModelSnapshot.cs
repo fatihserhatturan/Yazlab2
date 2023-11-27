@@ -327,6 +327,10 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("UserTrainerID");
 
+                    b.HasIndex("TrainerID");
+
+                    b.HasIndex("UserID");
+
                     b.ToTable("UserTrainers");
                 });
 
@@ -410,6 +414,25 @@ namespace DataAccessLayer.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.UserTrainer", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.Trainer", "Trainer")
+                        .WithMany()
+                        .HasForeignKey("TrainerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Trainer");
 
                     b.Navigation("User");
                 });
