@@ -18,9 +18,12 @@
                         <img src="https://placekitten.com/300/200" class="card-img-top" alt="Kedi Resmi">
                         <div class="card-body">
                             <h5 class="card-title">@x.Name</h5>
-                            <p class="card-text">@x.Description </p>
+                            <p class="card-text">@x.Description.Substring(0, x.Description.Substring(0, 100).LastIndexOf(" ")) ... </p>
                             <p class="card-text">Set Sayısı: @x.Set </p>
-                            <a href="#" class="btn btn-primary">Daha Fazla Bilgi</a>
+                            <form action="/ExercisesLists/ExercisePage" method="get">
+                                <input type="hidden" name="ExerciseListId" value="@x.ExerciseListId"/>
+                                <input type="submit" class="btn btn-primary" value="Detaylı Görünüm">
+                            </form>
                         </div>
                     </div>
                 </div>

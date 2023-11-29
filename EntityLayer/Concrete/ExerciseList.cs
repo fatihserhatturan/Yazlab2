@@ -15,5 +15,6 @@ namespace EntityLayer.Concrete
         public string Name { get; set; }
         public string Description { get; set; }
         public string Set {  get; set; }
+        public string ExerciseVideo { get; set; }
     }
 }

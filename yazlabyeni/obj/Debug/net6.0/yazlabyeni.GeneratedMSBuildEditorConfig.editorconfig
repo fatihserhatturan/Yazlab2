@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\fatti\Desktop\Yazlab2.1\yazlabyeni
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/DietLists/DietPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlldExpc3RzXERpZXRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/DietLists/ListDiet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlldExpc3RzXExpc3REaWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/ExercisesLists/ExercisePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlcmNpc2VzTGlzdHNcRXhlcmNpc2VQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/ExercisesLists/List.cshtml]

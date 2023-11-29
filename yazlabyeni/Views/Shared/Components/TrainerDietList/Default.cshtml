@@ -26,11 +26,14 @@
                                 
                                 <br>
 
-                                AKşam Yemeği : @x.Lunch
+                                Akşam Yemeği : @x.Lunch
 
                                 </p>
                             <p class="card-text">Günlük Kalori: @x.DailyCalories </p>
-                            <a href="#" class="btn btn-primary">Daha Fazla Bilgi</a>
+                            <form action="/DietLists/DietPage" method="get">
+                                <input type="hidden" name="DietListId" value="@x.DietListId"/>
+                                <input type="submit" class="btn btn-primary" value="Detaylı Görünüm">
+                            </form>
                         </div>
                     </div>
                 </div>

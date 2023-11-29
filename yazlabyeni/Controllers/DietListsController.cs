@@ -6,6 +6,7 @@ namespace yazlabyeni.Controllers
 {
     public class DietListsController : Controller
     {
+        DietListsManager dietListsManager = new DietListsManager();
         public IActionResult Index()
         {
             return View();
@@ -13,9 +14,16 @@ namespace yazlabyeni.Controllers
         [HttpGet]
         public IActionResult ListDiet()
         {
-            DietListsManager dietListsManager = new DietListsManager();
+           
             List<DietList> dietLists = new List<DietList>();
             return View(dietListsManager);
+        }
+
+        [HttpGet]
+        public IActionResult DietPage(int DietListId)
+        {
+            DietList diet = dietListsManager.GetDietListByID(DietListId);
+            return View(diet);
         }
         public IActionResult Update(DietList dietList)
         {

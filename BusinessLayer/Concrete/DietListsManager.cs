@@ -18,6 +18,12 @@ namespace BusinessLayer.Concrete
             return repository.List().ToList();
         }
 
+        public DietList GetDietById(int id)
+        {
+            DietList diet = repository.Find(x => x.DietListId == id);
+
+            return diet;
+        }
         public DietList GetDietListByID(int id)
         {
             DietList dietlist = repository.Find(x=>x.DietListId == id);

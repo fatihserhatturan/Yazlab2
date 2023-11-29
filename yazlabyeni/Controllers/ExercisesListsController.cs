@@ -7,7 +7,7 @@ namespace yazlabyeni.Controllers
 {
     public class ExercisesListsController : Controller
     {
-       
+        ExercisesListsManager exercisesListsManager = new ExercisesListsManager();
         public IActionResult Index()
         {
             return View();
@@ -15,11 +15,16 @@ namespace yazlabyeni.Controllers
         [HttpGet]
         public IActionResult List()
         {
-            ExercisesListsManager exercisesListsManager = new ExercisesListsManager();
+          
             List<ExerciseList> exerciseLists = exercisesListsManager.GetAllExercises();
             return View(exerciseLists);
         }
         
+        public IActionResult ExercisePage(int ExerciseListId)
+        {
+            ExerciseList exercise = exercisesListsManager.GetExerciseByID(ExerciseListId);
+            return View(exercise);
+        }
         public  IActionResult Update(ExerciseList exerciseList)
         {
             ExercisesListsManager exercisesListsManager = new ExercisesListsManager();
