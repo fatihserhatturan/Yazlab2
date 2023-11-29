@@ -31,9 +31,9 @@ namespace BusinessLayer.Concrete
         {
             return dietDal.GetAll().Where(x=>x.TrainerId == trainerId).ToList();
         }
-        public List<Diet> GetDietsByUserId(int userId)
+        public Diet GetDietsByUserId(int userId)
         {
-            return dietDal.GetAll().Where(x=> x.UserId == userId).ToList();
+            return repository.Find(x=> x.UserId == userId);
         }
         public int AddDiet(Diet diet)
         {

@@ -5,8 +5,40 @@
       "PackagePath": "staticwebassets\\yazlabyeni.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\4bbe0e22-0ce5-4dfc-bb39-0c882c381eef.JPEG",
+      "PackagePath": "staticwebassets\\Images\\4bbe0e22-0ce5-4dfc-bb39-0c882c381eef.JPEG"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\4e46fce0-783a-4b54-a6e2-6a2280bf3f10.png",
+      "PackagePath": "staticwebassets\\Images\\4e46fce0-783a-4b54-a6e2-6a2280bf3f10.png"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\72ab6a76-97ae-4927-8efc-1fd87afe77fd.JPEG",
+      "PackagePath": "staticwebassets\\Images\\72ab6a76-97ae-4927-8efc-1fd87afe77fd.JPEG"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\859f8a94-7464-449d-b766-a02a489da3a7.png",
+      "PackagePath": "staticwebassets\\Images\\859f8a94-7464-449d-b766-a02a489da3a7.png"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\d037a09f-a353-4a33-b08f-deb55815c552.jpeg",
+      "PackagePath": "staticwebassets\\Images\\d037a09f-a353-4a33-b08f-deb55815c552.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\d785881b-b508-43ca-9370-b73e418a39fe.JPEG",
+      "PackagePath": "staticwebassets\\Images\\d785881b-b508-43ca-9370-b73e418a39fe.JPEG"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\fatrate.jpg",
+      "PackagePath": "staticwebassets\\Images\\fatrate.jpg"
+    },
+    {
       "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\fitnes-770x513.jpg",
       "PackagePath": "staticwebassets\\Images\\fitnes-770x513.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\givencalories.jpg",
+      "PackagePath": "staticwebassets\\Images\\givencalories.jpg"
     },
     {
       "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\hq720.jpg",
@@ -15,6 +47,14 @@
     {
       "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\indir.jpeg",
       "PackagePath": "staticwebassets\\Images\\indir.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\logo.jpg",
+      "PackagePath": "staticwebassets\\Images\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\profile.jpg",
+      "PackagePath": "staticwebassets\\Images\\profile.jpg"
     },
     {
       "Id": "C:\\Users\\fatti\\Desktop\\Yazlab2.1\\yazlabyeni\\wwwroot\\Images\\train.jpg",

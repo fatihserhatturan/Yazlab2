@@ -32,9 +32,9 @@ namespace BusinessLayer.Concrete
            return ExerciseDal.GetAll().Where(x=>x.TrainerId == trainerId).ToList();
 
         }
-        public List<Exercise> GetExercisesByUserId(int userId)
+        public Exercise GetExercisesByUserId(int userId)
         {
-            return ExerciseDal.GetAll().Where(x=>x.UserId == userId).ToList();
+            return repository.Find(x=>x.UserId == userId);
         }
         public int AddExercise(Exercise exercise)
         {

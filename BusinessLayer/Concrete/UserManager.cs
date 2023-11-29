@@ -27,7 +27,15 @@ namespace BusinessLayer.Concrete
         
         public int Update(User user)
         {
-            return repository.Update(user);
+            User UpdatedUser = repository.Find(x => x.UserId == user.UserId);
+            UpdatedUser.Name = user.Name;
+            UpdatedUser.Surname = user.Surname;
+            UpdatedUser.PhoneNumber = user.PhoneNumber;
+            UpdatedUser.BirthDate = user.BirthDate;
+            UpdatedUser.Mail = user.Mail;
+            UpdatedUser.Sex = user.Sex;
+           
+            return repository.Update(UpdatedUser);
         }
         public List<User> GetUsersByTrainerId(int id) 
         {
