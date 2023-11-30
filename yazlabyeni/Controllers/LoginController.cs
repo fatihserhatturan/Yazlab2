@@ -73,7 +73,7 @@ namespace yazlabyeni.Controllers
             if (userinfo != null)
             {
                 HttpContext.Session.SetString("Mail", trainer.Mail);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Trainer");
             }
             
             return View();

@@ -82,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/Shared/_TrainerLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UcmFpbmVyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/Shared/_UserLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,8 +94,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/Trainer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/Trainer/TrainerDefaultDiets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxUcmFpbmVyRGVmYXVsdERpZXRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/Trainer/TrainerDefaultExercises.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxUcmFpbmVyRGVmYXVsdEV4ZXJjaXNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/Trainer/TrainerPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxUcmFpbmVyUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/Trainer/TrainerUserApplication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxUcmFpbmVyVXNlckFwcGxpY2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/fatti/Desktop/Yazlab2.1/yazlabyeni/Views/User/Index.cshtml]

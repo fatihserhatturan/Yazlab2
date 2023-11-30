@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -40,7 +41,7 @@ namespace BusinessLayer.Concrete
         public List<User> GetUsersByTrainerId(int id) 
         {
             UserManager um = new UserManager();
-            UserTrainerManager userTrainerManager = new UserTrainerManager();
+            UserTrainerManager userTrainerManager = new UserTrainerManager(new EfUserTrainerRepository());
             List<UserTrainer> userTrainers = userTrainerManager.GetUserTrainersByTrainerId(id);
             List<User> users = new List<User>();
             foreach (UserTrainer ut in userTrainers)

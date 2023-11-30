@@ -19,5 +19,7 @@ namespace EntityLayer.Concrete
         public string Expertise { get; set; }
         public int Count { get; set; }
 
+        public string TrainerPhoto {  get; set; }
+
     }
 }

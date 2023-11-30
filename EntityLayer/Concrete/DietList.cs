@@ -12,6 +12,7 @@ namespace EntityLayer.Concrete
         [Key]
         public int DietListId { get; set; }
 
+
         public int DailyCalories { get; set; }
 
         public string Target { get; set; }
@@ -21,5 +22,7 @@ namespace EntityLayer.Concrete
         public string Dinner { get; set; }
 
         public string Lunch { get; set; }
+
+      
     }
 }

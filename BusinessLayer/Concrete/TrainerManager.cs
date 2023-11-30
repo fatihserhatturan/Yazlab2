@@ -24,7 +24,15 @@ namespace BusinessLayer.Concrete
         }
         public int Update(Trainer trainer)
         {
-            return repository.Update(trainer);
+            Trainer updatedTrainer = repository.Find(x=>x.TrainerId == trainer.TrainerId);
+            updatedTrainer.Name = trainer.Name;
+            updatedTrainer.Surname = trainer.Surname;
+            updatedTrainer.PhoneNumber = trainer.PhoneNumber;
+            updatedTrainer.Mail = trainer.Mail;
+            updatedTrainer.Expertise = trainer.Expertise;
+            updatedTrainer.Description = trainer.Description;
+
+            return repository.Update(updatedTrainer);
         }
         public Trainer GetTrainerByEmail(string Email)
         {

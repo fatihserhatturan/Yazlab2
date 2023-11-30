@@ -13,24 +13,28 @@ namespace DataAccessLayer.Concrete
             optionsBuilder.UseSqlServer("server=DESKTOP-OFFTGKG;database=Yazlab2.3;Integrated Security=True;");
         }
 
-       public DbSet<Admin>? Admins { get; set; }
+       public DbSet<Admin> Admins { get; set; }
 
-       public DbSet<Trainer>? Trainers { get; set; }
+       public DbSet<Trainer> Trainers { get; set; }
 
-       public  DbSet<User>? Users { get; set; }
+       public  DbSet<User> Users { get; set; }
 
-       public DbSet<Diet>? Diets { get; set;}
+       public DbSet<Diet> Diets { get; set;}
 
-       public DbSet<DietList>? DietLists { get; set; }
+       public DbSet<DietList> DietLists { get; set; }
 
-       public DbSet<Exercise>? Exercises { get; set;}
+       public DbSet<Exercise> Exercises { get; set;}
 
-       public DbSet<ExerciseList>? ExercisesLists { get; set;}
+       public DbSet<ExerciseList> ExercisesLists { get; set;}
 
-       public DbSet<Message>? Messages { get; set; }
+       public DbSet<Message> Messages { get; set; }
 
-       public DbSet<UserInfo>? UserInfos { get; set; }
+       public DbSet<UserInfo> UserInfos { get; set; }
 
-       public DbSet<UserTrainer>? UserTrainers { get; set;}        
+       public DbSet<UserTrainer> UserTrainers { get; set;}   
+        
+       public DbSet<TrainerDiet> TrainerDiets { get; set; }
+
+       public DbSet<TrainerExercise> TrainerExercises { get; set; }
     }
 }
