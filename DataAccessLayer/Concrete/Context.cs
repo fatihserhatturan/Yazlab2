@@ -1,16 +1,19 @@
 ﻿using EntityLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNetCore.Identity;
 
 namespace DataAccessLayer.Concrete
 {
-    public class Context : DbContext
+    public class Context :DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-OFFTGKG;database=Yazlab2.3;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("server=DESKTOP-OFFTGKG;database=Yazlab2;Integrated Security=True;");
         }
 
        public DbSet<Admin> Admins { get; set; }

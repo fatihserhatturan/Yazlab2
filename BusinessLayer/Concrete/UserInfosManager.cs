@@ -20,6 +20,22 @@ namespace BusinessLayer.Concrete
 
             return repository.GetById(id);
         }
+        public int InsertUserInfo(int id)
+        {
+            UserInfo userInfo = new UserInfo
+            {
+                UserId = id,
+                Weight = "0",
+                Height = "0",
+                FatRate = "0",
+                WeeklyCalories =0
+                
+            };
+
+            return repository.Insert(userInfo);
+
+        }
+
         public int Update(UserInfo userInfo)
         {
             return repository.Update(userInfo);

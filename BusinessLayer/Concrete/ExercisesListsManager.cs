@@ -23,7 +23,17 @@ namespace BusinessLayer.Concrete
         }
         public int Update(ExerciseList exerciseList)
         {
-            return repository.Update(exerciseList);
+            ExerciseList exerciseList1 = repository.Find(x=>x.ExerciseListId==exerciseList.ExerciseListId);
+            exerciseList1.Name = exerciseList.Name;
+            exerciseList1.Target = exerciseList.Target;
+            exerciseList1.ExerciseVideo = exerciseList.ExerciseVideo;
+            exerciseList1.Set=exerciseList.Set;
+            exerciseList1.Description = exerciseList.Description;
+            return repository.Update(exerciseList1);
+        }
+        public int InsertExercise(ExerciseList exerciseList)
+        {
+            return repository.Insert(exerciseList);
         }
     }
 }

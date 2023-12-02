@@ -106,7 +106,7 @@ namespace yazlabyeni.Controllers
             if (userinfo != null)
             {
                 HttpContext.Session.SetString("Name", admin.Name);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("UserList", "Admin");
             }
             
             return View();

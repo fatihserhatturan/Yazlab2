@@ -31,7 +31,17 @@ namespace BusinessLayer.Concrete
         }
         public int Update(DietList dietlist)
         {
-            return repository.Update(dietlist);
+            DietList dietListUpdate = repository.Find(x => x.DietListId == dietlist.DietListId);
+            dietListUpdate.DailyCalories = dietlist.DailyCalories;
+            dietListUpdate.Target = dietlist.Target;
+            dietListUpdate.Breakfast = dietlist.Breakfast;
+            dietListUpdate.Dinner = dietlist.Dinner;
+            dietListUpdate.Lunch = dietlist.Lunch;
+            return repository.Update(dietListUpdate);
+        }
+        public int Insert(DietList dietlist)
+        {
+            return repository.Insert(dietlist);
         }
     }
 }

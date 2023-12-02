@@ -38,5 +38,19 @@ namespace BusinessLayer.Concrete
         {
             return repository.Find(x=>x.Mail == Email);
         }
+        public int ToggleTrainerStatus(int id)
+        {
+            Trainer trainer = repository.Find(x => x.TrainerId == id);
+
+            if (trainer.Status == false)
+            {
+                trainer.Status = true;
+            }
+            else
+            {
+                trainer.Status = false;
+            }
+            return repository.Update(trainer);
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -18,7 +19,7 @@ namespace EntityLayer.Concrete
         public string Description { get; set; }
         public string Expertise { get; set; }
         public int Count { get; set; }
-
+        public bool Status { get; set; }
         public string TrainerPhoto {  get; set; }
 
     }

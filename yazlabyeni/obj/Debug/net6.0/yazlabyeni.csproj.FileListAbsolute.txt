@@ -766,3 +766,8 @@ C:\Users\mssrm\OneDrive\Masaüstü\yazlab2\Yazlab2\yazlabyeni\obj\Debug\net6.0\r
 C:\Users\mssrm\OneDrive\Masaüstü\yazlab2\Yazlab2\yazlabyeni\obj\Debug\net6.0\yazlabyeni.pdb
 C:\Users\mssrm\OneDrive\Masaüstü\yazlab2\Yazlab2\yazlabyeni\obj\Debug\net6.0\yazlabyeni.genruntimeconfig.cache
 C:\Users\mssrm\OneDrive\Masaüstü\yazlab2\Yazlab2\yazlabyeni\obj\Debug\net6.0\ref\yazlabyeni.dll
+C:\Users\fatti\Desktop\Yazlab2.1\yazlabyeni\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+C:\Users\fatti\Desktop\Yazlab2.1\yazlabyeni\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\fatti\Desktop\Yazlab2.1\yazlabyeni\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fatti\Desktop\Yazlab2.1\yazlabyeni\bin\Debug\net6.0\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fatti\Desktop\Yazlab2.1\yazlabyeni\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
