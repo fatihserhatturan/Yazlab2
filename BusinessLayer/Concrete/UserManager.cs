@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace BusinessLayer.Concrete
     {
         IUserDal userDal;
         Repository<User> repository = new Repository<User>();
+        UserInfosManager userInfosManager = new UserInfosManager();
 
         public List<User> GetAllUsers()
         {
@@ -23,6 +25,17 @@ namespace BusinessLayer.Concrete
         {
             User user = repository.Find(x=>x.UserId == id);
             return user;
+        }
+
+        public int InsertUser(User user)
+        {
+            user.Status = true;
+            user.PhotoUrl = "a";
+            user.Sex = "b";
+            user.BirthDate = DateTime.Now;
+            repository.Insert(user);
+            userInfosManager.InsertUserInfo(user.UserId);
+            return 0;
         }
         
         public int Update(User user)
@@ -40,7 +53,7 @@ namespace BusinessLayer.Concrete
         public List<User> GetUsersByTrainerId(int id) 
         {
             UserManager um = new UserManager();
-            UserTrainerManager userTrainerManager = new UserTrainerManager();
+            UserTrainerManager userTrainerManager = new UserTrainerManager(new EfUserTrainerRepository());
             List<UserTrainer> userTrainers = userTrainerManager.GetUserTrainersByTrainerId(id);
             List<User> users = new List<User>();
             foreach (UserTrainer ut in userTrainers)
@@ -52,6 +65,21 @@ namespace BusinessLayer.Concrete
         public User GetUserByEmail(string email)
         {
             return repository.Find(x => x.Mail==email);
+        }
+
+        public int ToggleUserStatus(int id)
+        {
+            User user = repository.Find(x => x.UserId == id);
+
+            if(user.Status == false)
+            {
+                user.Status = true;
+            }
+            else
+            {
+                user.Status = false;
+            }
+            return repository.Update(user);
         }
     }
 }

@@ -229,13 +229,72 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TrainerPhoto")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("TrainerId");
 
                     b.ToTable("Trainers");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.TrainerDiet", b =>
+                {
+                    b.Property<int>("TrainerDietId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TrainerDietId"), 1L, 1);
+
+                    b.Property<int>("DietListId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("TrainerId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TrainerDietId");
+
+                    b.HasIndex("DietListId");
+
+                    b.HasIndex("TrainerId");
+
+                    b.ToTable("TrainerDiets");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.TrainerExercise", b =>
+                {
+                    b.Property<int>("TrainerExerciseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TrainerExerciseId"), 1L, 1);
+
+                    b.Property<int>("ExerciseListId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("TrainerId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TrainerExerciseId");
+
+                    b.HasIndex("ExerciseListId");
+
+                    b.HasIndex("TrainerId");
+
+                    b.ToTable("TrainerExercises");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.User", b =>
@@ -272,6 +331,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Sex")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Surname")
                         .IsRequired()
@@ -322,6 +384,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserTrainerID"), 1L, 1);
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<int>("TrainerID")
                         .HasColumnType("int");
@@ -409,6 +474,44 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Trainer");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.TrainerDiet", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.DietList", "DietList")
+                        .WithMany()
+                        .HasForeignKey("DietListId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.Trainer", "Trainer")
+                        .WithMany()
+                        .HasForeignKey("TrainerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DietList");
+
+                    b.Navigation("Trainer");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.TrainerExercise", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.ExerciseList", "ExerciseList")
+                        .WithMany()
+                        .HasForeignKey("ExerciseListId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.Trainer", "Trainer")
+                        .WithMany()
+                        .HasForeignKey("TrainerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ExerciseList");
+
+                    b.Navigation("Trainer");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.UserInfo", b =>

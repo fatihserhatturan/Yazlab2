@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -18,5 +20,6 @@ namespace EntityLayer.Concrete
         public DateTime BirthDate { get; set; }
         public string Sex { get; set; }
         public string PhotoUrl { get; set; }
+        public bool Status { get; set; }
     }
 }

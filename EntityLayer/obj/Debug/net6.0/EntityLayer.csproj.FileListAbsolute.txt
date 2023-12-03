@@ -20,6 +20,7 @@ C:\Users\mssrm\OneDrive\Masaüstü\yazlab2\Yazlab2\EntityLayer\obj\Debug\net6.0\
 C:\Users\mssrm\OneDrive\Masaüstü\yazlab2\Yazlab2\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
 C:\Users\mssrm\OneDrive\Masaüstü\yazlab2\Yazlab2\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
 C:\Users\mssrm\OneDrive\Masaüstü\yazlab2\Yazlab2\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+<<<<<<< HEAD
 C:\Users\mssrm\Source\Repos\Yazlab2\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
 C:\Users\mssrm\Source\Repos\Yazlab2\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
 C:\Users\mssrm\Source\Repos\Yazlab2\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
@@ -31,3 +32,6 @@ C:\Users\mssrm\Source\Repos\Yazlab2\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
 C:\Users\mssrm\Source\Repos\Yazlab2\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
 C:\Users\mssrm\Source\Repos\Yazlab2\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
 C:\Users\mssrm\Source\Repos\Yazlab2\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+=======
+C:\Users\fatti\Desktop\Yazlab2.1\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+>>>>>>> refs/remotes/origin/master
