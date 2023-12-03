@@ -1,0 +1,32 @@
+﻿@model yazlabyeni.Models.ForgotPassword
+
+@{
+    ViewData["Title"] = "CheckCode";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h1>Check Code</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CheckCode">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Code" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Kodu  Girin</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

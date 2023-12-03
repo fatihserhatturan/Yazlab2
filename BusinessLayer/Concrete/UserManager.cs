@@ -34,7 +34,7 @@ namespace BusinessLayer.Concrete
             UpdatedUser.BirthDate = user.BirthDate;
             UpdatedUser.Mail = user.Mail;
             UpdatedUser.Sex = user.Sex;
-           
+            UpdatedUser.Password = user.Password;
             return repository.Update(UpdatedUser);
         }
         public List<User> GetUsersByTrainerId(int id) 

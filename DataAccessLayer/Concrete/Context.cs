@@ -10,7 +10,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-OFFTGKG;database=Yazlab2.3;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("server=MUSTI\\SQLEXPRESS;database=Yazlab2.3;Integrated Security=True;");
         }
 
        public DbSet<Admin>? Admins { get; set; }
